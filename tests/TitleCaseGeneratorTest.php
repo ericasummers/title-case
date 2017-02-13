@@ -16,8 +16,25 @@
 
             //Assert
             $this->assertEquals("Peanut", $result);
-            
+
         }
+
+        function test_makeTitleCase_multipleWords()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "peanut butter";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Peanut Butter", $result);
+
+        }
+
+
+
     }
 
  ?>

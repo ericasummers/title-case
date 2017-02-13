@@ -32,6 +32,19 @@
             $this->assertEquals("Peanut Butter", $result);
 
         }
+        function test_makeTitleCase_multipleWordsWPrepositions()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "peanut butter and jelly";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Peanut Butter and Jelly", $result);
+
+        }
 
 
 

@@ -1,4 +1,4 @@
-# PHP Contacts List
+# PHP Title Case Generator
 
 #### _A webpage that capitalizes titles, 13 February 2017_
 

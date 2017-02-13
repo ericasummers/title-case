@@ -10,10 +10,15 @@
             foreach ($input_title_array as $word){
                 if (in_array($word, $prepositions)){
                     array_push($output_titlecased, $word);
-                } else {
+                }
+                else if (strpos($word, "mac")==0) {
+                    array_push($output_titlecased, ucwords($word, "c"));
+                }
+                else {
                     array_push($output_titlecased, ucfirst($word));
                 }
             }
+
             return implode(" ", $output_titlecased);
         }
     }

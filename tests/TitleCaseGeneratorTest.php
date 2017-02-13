@@ -45,6 +45,19 @@
             $this->assertEquals("Peanut Butter and Jelly", $result);
 
         }
+        function test_makeTitleCase_scottishNames()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "peanut butter and jelly macduff";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Peanut Butter and Jelly MacDuff", $result);
+
+        }
 
 
 

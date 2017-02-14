@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <ul>
+            {% for number in numbers %}
+            <li> {{ number }} </li>
+            {% endfor %}
+        </ul>
+
+        <p>Now for some rhythm:</p>
+        <ul>
+            {% for number in numbers %}
+            {% set step = thisgame.rhythmicDisplay %}
+            <li> {{ step }} </li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <li> {{ numbers.rhythmicDisplay }} </li>
+        </ul>
+    </body>
+</html>

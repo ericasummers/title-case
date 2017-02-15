@@ -2,29 +2,18 @@
 <html>
 <head>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-    <title>Ping Pong</title>
+    <title>Convert to Title Case!</title>
 </head>
 <body>
     <div class='container'>
-        <h1>Ping Pong</h1>
-        <form action="/display">
-            <div class="form-group">
-                <label for="count_input">Count Number</label>
-                <input type="number" name="count_input" placeholder="15">
+        <h1>Title Case Translator</h1>
+        <p>Enter the phrase you would like translated into title case</p>
+        <form action='/view_title_case'>
+            <div class='form-group'>
+              <label for='phrase'>Phrase:</label>
+              <input id='phrase' name='phrase' class='form-control' type='text'>
             </div>
-            <div class="form-group">
-                <label for="boots_number">Boots</label>
-                <input type="number" name="boots_number" placeholder="15">
-            </div>
-            <div class="form-group">
-                <label for="cats_number">Cats</label>
-                <input type="number" name="cats_number" placeholder="15">
-            </div>
-            <div class="form-group">
-                <label for="tempo">Tempo</label>
-                <input type="number" name="tempo" placeholder="15">
-            </div>
-            <button type="submit" class="btn btn-success" name="button">Submit</button>
+            <button type='submit' class='btn btn-success'>Translate</button>
         </form>
     </div>
 </body>
